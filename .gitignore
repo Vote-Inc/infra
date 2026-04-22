@@ -1,1 +1,31 @@
 /.idea/
+
+# Terraform state
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform working directories
+**/.terraform/
+
+# Terraform variable files (contain secrets)
+*.tfvars
+!*.tfvars.example
+
+# Terraform plan output
+*.tfplan
+tfplan
+
+# Terraform local overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# OS
+.DS_Store
+Thumbs.db
