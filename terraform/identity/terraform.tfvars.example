@@ -1,0 +1,14 @@
+aws_region         = "us-east-1"
+environment        = "dev"
+seed_user_password = "Test1234!"
+
+ghcr_image         = "ghcr.io/vote-inc/identity:latest"
+ballot_ghcr_image  = "ghcr.io/vote-inc/ballot:latest"
+vote_ghcr_image    = "ghcr.io/vote-inc/vote:latest"
+vote_fe_ghcr_image = "ghcr.io/vote-inc/vote-fe:latest"
+
+# From network stack outputs
+ecs_cluster_arn            = "arn:aws:ecs:us-east-1:123456789012:cluster/evoting-dev"
+subnet_ids                 = ["subnet-aaa", "subnet-bbb"]
+alb_target_group_arn       = "arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/evoting-identity-dev/abc"
+identity_security_group_id = "sg-xxxxxxxx"
